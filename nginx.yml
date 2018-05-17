@@ -7,11 +7,8 @@
       repo: 'https://github.com/DilipJadhav/ansible-tower.git'
       dest: /home/centos/ansible-tower
   
-  - name: exporting variables
+  - name: install nginx
+    command: python /home/centos/ansible-tower/aws-ansible/nginx.py --no-confirm
     environment:
       AWS_ACCESS_KEY_ID: {{ lookup('env','AWS_ACCESS_KEY_ID')}}
       AWS_SECRET_ACCESS_KEY: {{ lookup('env','AWS_SECRET_ACCESS_KEY')}}  
-    
-  - name: install nginx
-    command: python /home/centos/ansible-tower/aws-ansible/nginx.py --no-confirm
-
