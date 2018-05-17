@@ -11,5 +11,5 @@
   - debug: msg="{{ lookup('env','AWS_SECRET_ACCESS_KEY')}}"
   
   - name: install nginx
-    command: python /home/centos/ansible-tower/aws-ansible/nginx.py
+    command: python /home/centos/ansible-tower/aws-ansible/nginx.py --no-confirm
 
