@@ -7,8 +7,8 @@
       repo: 'https://github.com/DilipJadhav/ansible-tower.git'
       dest: /home/centos/ansible-tower
   
-  - name: changing mode of ec2.py
-    command: sudo chmod 777 /home/centos/ansible-tower/aws-ansible/inventory/aws/hosts/ec2.py        
+#  - name: changing mode of ec2.py
+#    command: sudo chmod 777 /home/centos/ansible-tower/aws-ansible/inventory/aws/hosts/ec2.py        
   
   - name: install nginx
     command: python /home/centos/ansible-tower/aws-ansible/nginx.py --no-confirm
