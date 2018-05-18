@@ -9,7 +9,6 @@
   
 #  - name: changing mode of ec2.py
 #    command: sudo chmod 777 /home/centos/ansible-tower/aws-ansible/inventory/aws/hosts/ec2.py        
-  - debug
   - name: install nginx
     command: python /home/centos/ansible-tower/aws-ansible/nginx.py --no-confirm
     environment:
